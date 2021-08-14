@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 
 import com.example.eduapp.R;
+
 import com.example.eduapp.databinding.ActivityStudentsHomeBinding;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
+
 
 public class studentHome extends AppCompatActivity {
 
@@ -17,6 +19,7 @@ public class studentHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_home);
+
 
         chipNavigationBar=findViewById(R.id.chip);
         chipNavigationBar.setItemSelected(R.id.home,true);

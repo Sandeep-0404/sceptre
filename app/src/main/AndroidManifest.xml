@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduAPP">
         <activity
-            android:name=".login"
+
             android:exported="true" />
         <activity
             android:name=".student.studentHome"
