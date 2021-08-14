@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".student.studentHome">
+    tools:context=".student.studentHome"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+
+
+
+    </FrameLayout>
+
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/corners"
+        android:elevation="8dp"
+        android:outlineSpotShadowColor="@color/black"
+        app:cnb_iconSize="24dp"
+        app:cnb_menuResource="@menu/bttm"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="8dp"
+        app:cnb_unselectedColor="@color/white" />
+
+
+
+</RelativeLayout>
