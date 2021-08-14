@@ -8,6 +8,37 @@
   "client": [
     {
       "client_info": {
+
+        "mobilesdk_app_id": "1:184618017844:android:2c2b2bc00ee78d2228d661",
+        "android_client_info": {
+          "package_name": "com.example.asdf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184618017844-qgeqdn4k17j6cm2b3qsnem9cqu05s9ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXaIlP-0_e7Qb0Glj2QOvNOOk99XZPFgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184618017844-qgeqdn4k17j6cm2b3qsnem9cqu05s9ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+
         "mobilesdk_app_id": "1:184618017844:android:44d07c190bb432d528d661",
         "android_client_info": {
           "package_name": "com.example.eduapp"
