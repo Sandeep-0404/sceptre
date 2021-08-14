@@ -1,4 +1,4 @@
-package com.example.eduapp.teachers;
+package com.example.eduapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.eduapp.R;
+import com.example.eduapp.teachers.teachers_dashboard;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -23,7 +24,5 @@ public class MainActivity extends AppCompatActivity {
         reference.push().setValue("dfg");
     }
 
-    public void cghek(View view) {
-        startActivity(new Intent(this,teachers_dashboard.class));
-    }
+
 }
