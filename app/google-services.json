@@ -8,6 +8,7 @@
   "client": [
     {
       "client_info": {
+
         "mobilesdk_app_id": "1:184618017844:android:2c2b2bc00ee78d2228d661",
         "android_client_info": {
           "package_name": "com.example.asdf"
@@ -37,6 +38,7 @@
     },
     {
       "client_info": {
+
         "mobilesdk_app_id": "1:184618017844:android:44d07c190bb432d528d661",
         "android_client_info": {
           "package_name": "com.example.eduapp"

@@ -11,12 +11,20 @@
         android:theme="@style/Theme.EduAPP">
         <activity
 
+            android:name=".Auth.Update_Profile"
             android:exported="true" />
         <activity
-            android:name=".student.studentHome"
-            android:exported="true"></activity>
+            android:name=".Auth.ForgotPassword"
+            android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Auth.AuthActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Auth.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +32,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".student.studentHome"
+            android:exported="true" />
+        <activity
+            android:name=".student.studentsHome"
+            android:exported="true"
+            android:label="@string/title_activity_students_home"
+            android:theme="@style/Theme.EduAPP.NoActionBar" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

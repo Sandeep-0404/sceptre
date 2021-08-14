@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         username = findViewById(R.id.username1);
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         passwordSg = findViewById(R.id.passwords1);
         progressBarS = findViewById(R.id.progressBarS);
         mAuth1 = FirebaseAuth.getInstance();
+
 
     }
 
