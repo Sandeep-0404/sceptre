@@ -2,15 +2,14 @@ package com.example.eduapp.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
 import com.example.eduapp.Dashboard;
 import com.example.eduapp.R;
@@ -28,15 +27,17 @@ import java.util.HashMap;
 
 public class FragmentSignup extends Fragment {
 
+    int category;
     FragmentSignupBinding fragmentSignupBinding;
     FirebaseAuth auth;
     DatabaseReference myRef;
+    String  admin;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        fragmentSignupBinding=FragmentSignupBinding.inflate(getLayoutInflater());
+        fragmentSignupBinding = FragmentSignupBinding.inflate(getLayoutInflater());
         auth = FirebaseAuth.getInstance();
         fragmentSignupBinding.signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,14 +106,32 @@ public class FragmentSignup extends Fragment {
                     auth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
+
+                            category = fragmentSignupBinding.category.getCheckedRadioButtonId();
+
+                            switch (category) {
+
+
+                                case R.id.teacher:
+                                    admin = "true";
+                                    break;
+                                case R.id.student:
+                                    admin = "false";
+                                    break;
+
+
+                            }
+
+
                             FirebaseUser firebaseUser = auth.getCurrentUser();
                             String userid = firebaseUser.getUid();
                             myRef = FirebaseDatabase.getInstance().getReference("Users").child(userid);
-                            HashMap<String, String> hashMap = new HashMap<>();
+                            HashMap<String, String > hashMap = new HashMap<>();
                             hashMap.put("id", userid);
                             hashMap.put("name", name);
                             hashMap.put("username", username);
-                            hashMap.put("imageurl", "https://tse2.mm.bing.net/th?id=OIP.NYi0ibx-GnoFsgKhwj8WfgHaLZ&pid=Api&P=0&w=300&h=300");
+                            hashMap.put("isAdmin", admin);
+
 
                             myRef.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
@@ -131,8 +150,7 @@ public class FragmentSignup extends Fragment {
                         }
 
                     });
-                }
-                else {
+                } else {
                     Toast.makeText(getActivity(), "Invalid!", Toast.LENGTH_SHORT).show();
                     fragmentSignupBinding.progressBar.setVisibility(View.GONE);
                 }

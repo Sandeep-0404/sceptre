@@ -65,6 +65,7 @@ public class home extends Fragment {
                     allGrpModel allGrpModel = new allGrpModel();
                     allGrpModel.setGrpName(mp.get("groupname"));
                     allGrpModel.setDate(mp.get("date"));
+                    allGrpModel.setInviteCode(mp.get("invitecode"));
                     data.add(allGrpModel);
 
 

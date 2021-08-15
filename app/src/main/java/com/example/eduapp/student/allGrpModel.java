@@ -2,7 +2,18 @@ package com.example.eduapp.student;
 
 public class allGrpModel {
 
-    String  grpName,Date;
+    String  grpName;
+    String Date;
+
+    public String getInviteCode() {
+        return inviteCode;
+    }
+
+    public void setInviteCode(String inviteCode) {
+        this.inviteCode = inviteCode;
+    }
+
+    String inviteCode;
 
     public String getDate() {
         return Date;

@@ -1,10 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".Fragments.FragmentSignup">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_text"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:hint="  Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#8A56AC"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        tools:layout_editor_absoluteX="10dp" />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_text"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:hint="  Username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#8A56AC"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:layout_editor_absoluteX="3dp" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_text"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint="  Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#8A56AC"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_text"
+        android:drawableStart="@drawable/ic_password"
+        android:ems="10"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+
+        android:textColor="#8A56AC"
+        app:layout_constraintBottom_toTopOf="@+id/confirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:layout_editor_absoluteX="3dp" />
+
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_text"
+        android:drawableStart="@drawable/ic_password"
+        android:ems="10"
+        android:hint="  Confirm Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#8A56AC"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:layout_editor_absoluteX="3dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+
+        <RadioGroup
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dp"
+                android:text="Admin"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="100dp"
+                android:text="student" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button"
+        android:text="   SIGNUP   "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+        tools:layout_editor_absoluteX="3dp" />
+
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -17,110 +156,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup" />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/input_text"
-        android:drawableStart="@drawable/ic_baseline_email_24"
-        android:ems="10"
-        android:hint="  Email"
-        android:inputType="textEmailAddress"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:textColor="#8A56AC"
-        app:layout_constraintBottom_toTopOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        tools:layout_editor_absoluteX="3dp" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/input_text"
-        android:drawableStart="@drawable/ic_password"
-        android:ems="10"
-        android:hint="  Password"
-        android:inputType="textPassword"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:textColor="#8A56AC"
-        app:layout_constraintBottom_toTopOf="@+id/confirmPassword"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        tools:layout_editor_absoluteX="3dp" />
-
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/input_text"
-        android:drawableStart="@drawable/ic_baseline_person_24"
-        android:ems="10"
-        android:hint="  Username"
-        android:inputType="textPersonName"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:textColor="#8A56AC"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        tools:layout_editor_absoluteX="3dp" />
-
-    <EditText
-        android:id="@+id/confirmPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/input_text"
-        android:drawableStart="@drawable/ic_password"
-        android:ems="10"
-        android:hint="  Confirm Password"
-        android:inputType="textPassword"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:textColor="#8A56AC"
-        app:layout_constraintBottom_toTopOf="@+id/signup"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        tools:layout_editor_absoluteX="3dp" />
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/input_text"
-        android:drawableStart="@drawable/ic_baseline_person_24"
-        android:ems="10"
-        android:layout_margin="10dp"
-        android:hint="  Name"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        android:textColor="#8A56AC"
-        app:layout_constraintBottom_toTopOf="@+id/username"
-        app:layout_constraintTop_toBottomOf="@+id/image"
-        tools:layout_editor_absoluteX="3dp" />
-
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_baseline_person_24"
-        android:background="@drawable/input_text"
-        app:layout_constraintBottom_toTopOf="@+id/name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="   SIGNUP   "
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/progressBar"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
-        tools:layout_editor_absoluteX="3dp" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
