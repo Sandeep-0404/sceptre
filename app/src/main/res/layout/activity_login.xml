@@ -138,7 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="SignUp"
-            android:text="@string/signuo"
+            android:text="signup"
 
             android:textColor="@color/white"
             android:textSize="21sp"

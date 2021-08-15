@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".Auth.AuthActivity">
 
     <com.google.android.material.tabs.TabLayout
@@ -13,21 +13,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
         android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        app:tabTextColor="#8A56AC"
-        app:tabMode="fixed"
-        app:tabIndicatorGravity="stretch"
-        app:tabSelectedTextColor="@color/white"
+        app:tabIndicator="@drawable/tab_indicator"
         app:tabIndicatorAnimationMode="elastic"
-        app:tabIndicator="@drawable/tab_indicator"/>
+        app:tabIndicatorGravity="stretch"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#8A56AC" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
