@@ -3,6 +3,7 @@ package com.example.eduapp.Adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,6 +34,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
         holder.textViewTitle.setText(currentNote.getTitle());
         holder.textViewDescription.setText(currentNote.getDescription());
         holder.textViewPriority.setText(String.valueOf(currentNote.getPriority()));
+
     }
 
     @Override
@@ -51,6 +53,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
 
     public class NoteHolder extends RecyclerView.ViewHolder {
         TextView textViewTitle, textViewDescription, textViewPriority;
+
 
         public NoteHolder(View itemView) {
             super(itemView);

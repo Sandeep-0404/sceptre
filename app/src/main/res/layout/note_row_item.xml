@@ -51,5 +51,7 @@
             android:layout_below="@id/text_view_title"
             android:text="desciption"/>
 
+
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

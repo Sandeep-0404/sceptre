@@ -4,6 +4,7 @@
 
     <item
         android:id="@+id/home"
+
         android:icon="@drawable/home_24"
         android:title="Home"
         app:cnb_backgroundColor="@color/white"
@@ -21,8 +22,10 @@
         />
 
 
+
     <item
         android:id="@+id/create_grp"
+
         android:icon="@drawable/create"
         android:title="Create"
         app:cnb_backgroundColor="@color/white"
@@ -31,8 +34,10 @@
         />
 
 
+
     <item
         android:id="@+id/assignment"
+
         android:icon="@drawable/assignment"
         android:title="Assignment"
         app:cnb_backgroundColor="@color/white"
@@ -48,4 +53,5 @@
 
 
         />
+
 </menu>

@@ -15,7 +15,6 @@
     </FrameLayout>
 
 
-
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/chip"
         android:layout_width="match_parent"

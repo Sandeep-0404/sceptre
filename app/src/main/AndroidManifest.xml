@@ -17,9 +17,6 @@
             android:name=".ToDoList.AddNoteActivity"
             android:exported="true" />
         <activity
-            android:name=".Auth.Update_Profile"
-            android:exported="true" />
-        <activity
             android:name=".Auth.ForgotPassword"
             android:exported="true" />
         <activity
