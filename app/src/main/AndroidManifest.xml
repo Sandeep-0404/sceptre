@@ -10,7 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduAPP">
         <activity
-
+            android:name=".ToDoList.TodoList"
+            android:exported="true" />
+        <activity
+            android:name=".ToDoList.AddNoteActivity"
+            android:exported="true" />
+        <activity
             android:name=".Auth.Update_Profile"
             android:exported="true" />
         <activity
@@ -22,7 +27,6 @@
         <activity
             android:name=".Auth.AuthActivity"
             android:exported="true" />
-
         <activity
             android:name=".Auth.SplashScreen"
             android:exported="true">

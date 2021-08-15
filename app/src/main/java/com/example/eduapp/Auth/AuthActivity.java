@@ -19,6 +19,7 @@ public class AuthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         activityAuthBinding=ActivityAuthBinding.inflate(getLayoutInflater());
         setContentView(activityAuthBinding.getRoot());
+        getSupportActionBar().hide();
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.add(new FragmentLogin(), "Login");
         adapter.add(new FragmentSignup(), "Signup");
