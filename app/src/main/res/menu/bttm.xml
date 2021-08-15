@@ -5,43 +5,28 @@
     <item
         android:id="@+id/home"
         android:title="Home"
-        android:icon="@drawable/home_24"
-        app:cnb_backgroundColor="@color/white"
-
-        />
+        android:icon="@drawable/home_24"/>
 
     <item
         android:id="@+id/join_grp"
         android:title="Join"
-        android:icon="@drawable/join"
-        app:cnb_backgroundColor="@color/white"
-
-        />
+        android:icon="@drawable/join"/>
 
 
     <item
         android:id="@+id/create_grp"
         android:title="Create"
-        android:icon="@drawable/create"
-        app:cnb_backgroundColor="@color/white"
-
-        />
+        android:icon="@drawable/create" />
 
 
     <item
         android:id="@+id/assignment"
         android:title="Assignment"
-        android:icon="@drawable/assignment"
-        app:cnb_backgroundColor="@color/white"
-
-        />
+        android:icon="@drawable/assignment"/>
 
     <item
         android:id="@+id/result"
         android:title="Result"
-        android:icon="@drawable/result"
+        android:icon="@drawable/result"/>
 
-        app:cnb_backgroundColor="@color/white"
-
-        />
 </menu>

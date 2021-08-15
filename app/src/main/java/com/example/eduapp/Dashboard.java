@@ -11,7 +11,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.eduapp.Auth.AuthActivity;
-import com.example.eduapp.Auth.Update_Profile;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Dashboard extends AppCompatActivity {
@@ -66,10 +65,7 @@ public class Dashboard extends AppCompatActivity {
                 finish();
                 return true;
 
-            case R.id.profile :
-                startActivity(new Intent(Dashboard.this, Update_Profile.class));
-                finish();
-                return true;
+
         }
         return false;
     }
