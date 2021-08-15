@@ -16,7 +16,8 @@
         <entry key="..\:/eduAPP/app/src/main/res/layout/activity_main.xml" value="0.10364583333333334" />
         <entry key="..\:/eduAPP/app/src/main/res/layout/activity_student_home.xml" value="0.2" />
         <entry key="..\:/eduAPP/app/src/main/res/layout/activity_students_home.xml" value="0.2234375" />
-        <entry key="..\:/eduAPP/app/src/main/res/layout/activity_teachers_dashboard.xml" value="0.22239583333333332" />
+        <entry key="..\:/eduAPP/app/src/main/res/layout/activity_teachers_dashboard.xml" value="0.152" />
+        <entry key="..\:/eduAPP/app/src/main/res/layout/activity_upload_assignment.xml" value="0.2265625" />
         <entry key="..\:/eduAPP/app/src/main/res/layout/fragment_add.xml" value="0.2234375" />
         <entry key="..\:/eduAPP/app/src/main/res/layout/fragment_assignment.xml" value="0.2234375" />
         <entry key="..\:/eduAPP/app/src/main/res/layout/fragment_bottom_join.xml" value="0.10277777777777777" />

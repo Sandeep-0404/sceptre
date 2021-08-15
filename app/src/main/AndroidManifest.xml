@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduAPP">
         <activity
-
+            android:name=".teachers.uploadAssignment"
+            android:exported="true" />
+        <activity
             android:name=".Auth.Update_Profile"
             android:exported="true" />
         <activity
@@ -22,23 +24,21 @@
         <activity
             android:name=".Auth.AuthActivity"
             android:exported="true" />
-
         <activity
-            android:name=".Auth.SplashScreen"
+            android:name=".teachers.teachers_dashboard"
             android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".student.studentHome"
-            android:exported="true" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".Auth.SplashScreen"
+            android:exported="true"></activity>
+        <activity
+            android:name=".student.studentHome"
+            android:exported="true"></activity>
         <activity
             android:name=".student.studentsHome"
             android:exported="true"
