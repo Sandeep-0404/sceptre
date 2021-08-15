@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduAPP">
         <activity
-
+            android:name=".student.dummy"
+            android:exported="true" />
+        <activity
             android:name=".ToDoList.TodoList"
             android:exported="true" />
         <activity
@@ -36,10 +38,10 @@
         </activity>
         <activity
             android:name=".Auth.SplashScreen"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".student.studentHome"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".student.studentsHome"
             android:exported="true"
