@@ -21,6 +21,7 @@ public class SplashScreen extends AppCompatActivity {
         activitySplashScreenBinding=ActivitySplashScreenBinding.inflate(getLayoutInflater());
         setContentView(activitySplashScreenBinding.getRoot());
 
+        getSupportActionBar().hide();
         ObjectAnimator objectAnimator=ObjectAnimator.ofPropertyValuesHolder(activitySplashScreenBinding.imageView,
                 PropertyValuesHolder.ofFloat("scaleX",1.2f),
                 PropertyValuesHolder.ofFloat("scaleY",1.2f));
