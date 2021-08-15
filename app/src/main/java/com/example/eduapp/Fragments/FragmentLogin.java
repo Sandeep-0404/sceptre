@@ -14,8 +14,6 @@ import android.widget.Toast;
 
 import com.example.eduapp.Auth.ForgotPassword;
 import com.example.eduapp.Dashboard;
-import com.example.eduapp.MainActivity;
-import com.example.eduapp.R;
 import com.example.eduapp.databinding.FragmentLoginBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
