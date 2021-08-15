@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/bgforjoin"
     android:orientation="vertical"
-    tools:context=".student.fragmentForcreate">
+    tools:context=".student.fragmentForcreate"
+    android:id="@+id/tech_create">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
