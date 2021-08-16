@@ -36,6 +36,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
     buildFeatures {
         viewBinding true
     }
@@ -69,7 +71,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 
-
     implementation "com.android.support:support-v4:18.0.+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.32"
     implementation 'de.hdodenhof:circleimageview:3.1.0'
@@ -77,6 +78,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:21.0.1'
     implementation 'com.google.firebase:firebase-firestore:23.0.3'
     implementation 'com.google.firebase:firebase-storage:20.0.0'
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
 
 
 

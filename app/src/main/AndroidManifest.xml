@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduAPP">
         <activity
+            android:name=".teachers.Ques_assignment"
+            android:exported="true" />
+        <activity
+            android:name=".teachers.window_teachers"
+            android:exported="true" />
+        <activity
+            android:name=".teachers.webview"
+            android:exported="true" />
+        <activity
             android:name=".student.dummy"
             android:exported="true" />
         <activity

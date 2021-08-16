@@ -47,7 +47,6 @@ public class homeAdapter extends RecyclerView.Adapter<homeAdapter.viewholder> {
         TextView grpName,date;
         public viewholder(@NonNull View itemView) {
             super(itemView);
-
             grpName=itemView.findViewById(R.id.grpName);
             date=itemView.findViewById(R.id.dategrpCreated);
         }

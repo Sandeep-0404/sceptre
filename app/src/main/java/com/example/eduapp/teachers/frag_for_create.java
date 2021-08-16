@@ -19,6 +19,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 public class frag_for_create extends BottomSheetDialogFragment {
@@ -54,6 +56,12 @@ public class frag_for_create extends BottomSheetDialogFragment {
 
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 String uid = user.getUid();
+
+
+                SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                Date date = new Date();
+                String date1=formatter.format(date);
+
                 String invitecode = getrandomstring(5);
                 String edtgrup = groupname.getText().toString().trim();
 
@@ -66,16 +74,19 @@ public class frag_for_create extends BottomSheetDialogFragment {
                 refw.child("members").push().setValue(modelgroup);
                 modelgrupdetails modelgrupdetails = new modelgrupdetails();
                 modelgrupdetails.setGroupname(edtgrup);
+                modelgrupdetails.setDate(date1);
+                modelgrupdetails.setInvitecode(invitecode);
                // modelgrupdetails.setGruppic(pic);
                 refw.child("groupdetails").setValue(modelgrupdetails);
 
                 DatabaseReference ret23=FirebaseDatabase.getInstance().getReference("userowngroup").child(uid);
                 // ret23.push().child("invitecode").setValue(invitecode);
-                modeluserowngrup mdt=new modeluserowngrup();
-                mdt.setInvitecode(invitecode);
-                mdt.setGroupname(edtgrup);
+                modelgrupdetails modelgrupdetails1 = new modelgrupdetails();
+                modelgrupdetails1.setGroupname(edtgrup);
+                modelgrupdetails1.setDate(date1);
+                modelgrupdetails1.setInvitecode(invitecode);
                // mdt.setGrouppic(pic);
-                ret23.push().setValue(mdt);
+                ret23.push().setValue(modelgrupdetails1);
 
 
                 // dismiss();

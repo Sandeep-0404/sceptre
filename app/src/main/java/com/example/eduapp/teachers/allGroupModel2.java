@@ -1,14 +1,22 @@
 package com.example.eduapp.teachers;
 
-public class modelgrupdetails {
-    String date,groupname,invitecode;
+public class allGroupModel2 {
+    String  grpName,Date,invitecode;
+
+    public String getGrpName() {
+        return grpName;
+    }
+
+    public void setGrpName(String grpName) {
+        this.grpName = grpName;
+    }
 
     public String getDate() {
-        return date;
+        return Date;
     }
 
     public void setDate(String date) {
-        this.date = date;
+        Date = date;
     }
 
     public String getInvitecode() {
@@ -17,13 +25,5 @@ public class modelgrupdetails {
 
     public void setInvitecode(String invitecode) {
         this.invitecode = invitecode;
-    }
-
-    public String getGroupname() {
-        return groupname;
-    }
-
-    public void setGroupname(String groupname) {
-        this.groupname = groupname;
     }
 }

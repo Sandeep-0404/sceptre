@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#36043E"
+    app:cardCornerRadius="30dp"
+    android:elevation="25dp"
+    android:id="@+id/cardviewonclickteacher"
+    android:outlineSpotShadowColor="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dategrpCreated_teachers"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:text="30-7-21"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/grpName_teachers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="65dp"
+            android:text="Grp Name"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
