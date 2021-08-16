@@ -5,16 +5,19 @@
       <map>
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/drawable/bgforjoin.xml" value="0.18703703703703703" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/drawable/chatbutton.xml" value="0.18703703703703703" />
+        <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_check.xml" value="0.146875" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_dummy.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_forgot_password.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_login.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_pdfview.xml" value="0.146875" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_ques_assignment.xml" value="0.14114583333333333" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_question_assignment_upload.xml" value="0.14114583333333333" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_student_home.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_students_home.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_teachers_dashboard.xml" value="0.15942028985507245" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_upload_assignment.xml" value="0.12239583333333333" />
+        <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_webview.xml" value="0.13854166666666667" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/activity_window_teachers.xml" value="0.10833333333333334" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/fragment_assignment.xml" value="0.12239583333333333" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/fragment_bottom_join.xml" value="0.13020833333333334" />
@@ -28,6 +31,7 @@
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/fragment_teacher_create.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/fragment_teacher_join.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/fragment_techer_home.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/singlerow_assignment.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/studentsinglerow.xml" value="0.12239583333333333" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/layout/teachersinglerow.xml" value="0.12239583333333333" />
         <entry key="..\:/Users/Saurav Kumar/AndroidStudioProjects/sceptre/app/src/main/res/menu/bttm.xml" value="0.12239583333333333" />

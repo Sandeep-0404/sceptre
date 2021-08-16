@@ -28,7 +28,7 @@ public class Ques_assignment extends AppCompatActivity {
 
 StorageReference storageReference;
 DatabaseReference firebaseDatabase;
-String s1;
+String ic;
 Button browse,upload;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +38,9 @@ Button browse,upload;
         firebaseDatabase=FirebaseDatabase.getInstance().getReference();
         upload=findViewById(R.id.upload);
         browse=findViewById(R.id.browse);
+        Intent intent=getIntent();
+        ic=intent.getStringExtra("ic");
 
-
-        //Toast.makeText(getApplicationContext(), s1, Toast.LENGTH_SHORT).show();
-      //  window_teachers windowTeachers=new window_teachers();
-      //  String invitecode=windowTeachers.mymethod();
-    //    Toast.makeText(getApplicationContext(), invitecode, Toast.LENGTH_SHORT).show();
     }
 
     public void browse(View view) {
@@ -78,7 +75,7 @@ uploadxxx(data.getData());
                         Task<Uri>uriTask=taskSnapshot.getStorage().getDownloadUrl();
                         while (!uriTask.isComplete());
                         Uri uri=uriTask.getResult();
-                        DatabaseReference reft=FirebaseDatabase.getInstance().getReference("group");
+                        DatabaseReference reft=FirebaseDatabase.getInstance().getReference("group").child(ic).child("assignment");
                         reft.push().setValue(uri.toString());
                         Toast.makeText(getApplicationContext(), "uploaded", Toast.LENGTH_SHORT).show();
                         progressDialog.dismiss();
