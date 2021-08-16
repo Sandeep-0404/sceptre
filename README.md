@@ -15,17 +15,17 @@
  ## Dashboard:
    
    ### Teacher:
-   From the dashboard the teachers can move to the activities where they can perform the following:
-     1) Can create and upload Quizzes and Assignments
-     2) Create groups where they can give necessary class materials and other announcement to the students
-     3) Keep Record of attendance of the students
-     4) Create their own plan on how to teach the students in a playful way
+     From the dashboard the teachers can move to the activities where they can perform the following:
+       1) Can create and upload Quizzes and Assignments
+       2) Create groups where they can give necessary class materials and other announcement to the students
+       3) Keep Record of attendance of the students
+       4) Create their own plan on how to teach the students in a playful way
    
    ### Students:
-   From the Students Dashboard, thay can move to the following pages:
-     1) Attend quizzes and assignments
-     2) Create groups with both friends and teachers, where they can chat and have group studies, play games, etc.
-     3) Make their own personalized ToDoList where they can prioritize their daily activities
+     From the Students Dashboard, thay can move to the following pages:
+       1) Attend quizzes and assignments
+       2) Create groups with both friends and teachers, where they can chat and have group studies, play games, etc.
+       3) Make their own personalized ToDoList where they can prioritize their daily activities
 
 ## Technology Stack:
      1) Firebase Authentication
